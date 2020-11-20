@@ -37,6 +37,7 @@
       </tbody>
     </table>
 </div>
+<div class="wra2">
   <div class="container">
     <% if user_signed_in? %>
       <%= form_with(model: [@spot, @comment], local: true) do |form| %>
@@ -58,6 +59,7 @@
       <% end %>
     </div>
   </div>
+</div>
 <%=link_to '一覧へ', spots_path, class:"itiran"%>
 
 <%= render "shared/footer"%>
