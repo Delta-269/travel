@@ -1,0 +1,44 @@
+<%= render "shared/header"%>
+<div class="spot-form">
+  <div class="spot-back"> 
+    <div class="sis">
+      <ul class="bar-2">
+        <li><%=link_to 'カテゴリー', catelists_path, class: "cate"%></li>
+        <li><%=link_to '人気の投稿', "#", class: "favo"%></li>
+      </ul>
+    </div>
+    <div class="bar-3">
+       <%=link_to '新規投稿作成', new_spot_path, class: "sponew"%>
+    </div>
+  </div>
+  <div class="spot_wrapper">
+    <div class="forms">
+      <%= form_with url: search_spots_path, local: true, method: :get, class: "search-form" do |form| %>
+        <%= form.text_field :keyword, placeholder: "search...", class: "search-input" %>
+        <%= form.submit "検索", class: "search-btn" %>
+      <% end %>
+    </div>
+    <h1 class="d">一覧</h1>
+      <ul class="ais">
+      <% unless @spots.empty? %>
+        
+        <% @spots.each do |spot|%>
+          <li class="spotlist">
+            <%=link_to spot_path(spot.id) do%>
+              <div class='spot-img'>
+              <div class="sn"><%= spot.user.name%></div>
+                <%= image_tag spot.image, class: "spot-i"%>
+              </div>
+              <div class='spot-name'>
+                <%= spot.title %>
+              </div>
+           <% end %>
+          </li>
+        <% end %>
+      <%else%>
+        <h3 class="nil">投稿なし</h3>
+      <%end%>
+    </ul>
+  </div>
+</div>
+<%= render "shared/footer"%>

@@ -1,0 +1,41 @@
+.spotnew {
+  height: 1000px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(194, 194, 194);
+}
+
+.tou {
+  margin-bottom: 40px;
+  padding: 8px 20px;
+  border: 2px solid rgba(0, 0, 0, 0.712);
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+.tou1 {
+  font-size: 20px;
+}
+.spotform {
+  height: 100vh;
+  width: 55vw;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color: whitesmoke;
+}
+
+.field1 {
+  margin: 10px;
+}
+
+.su{
+  margin-top: 10px;
+}
+.itiran{
+  margin-top: 30px;
+}

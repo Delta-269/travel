@@ -1,0 +1,115 @@
+.spot-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.spot-back {
+  height: 300px;
+  width: 100vw;
+  background-image: image-url("f");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forms {
+  margin-left: 10px;
+}
+
+.bar-2 {
+  display: flex;
+  margin-top: 250px;
+}
+
+.bar-3 {
+  margin-top: 230px;
+  margin-right: 30px;
+}
+
+.sponew {
+  text-decoration: none;
+  margin-left: 100px;
+  background-color: rgba(207, 143, 58, 0.815);
+  border: 1px solid white;
+  padding: 18px;
+  color: aliceblue;
+}
+
+.spot_wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(252, 252, 252, 0.616);
+  justify-content: center;
+  align-items: center;
+}
+
+.forms {
+  list-style: none;
+  margin: 0 5px 0 auto;
+}
+
+.d {
+  margin-top: 20px;
+  font-size: 30px;
+  background-color: rgb(253, 253, 253);
+  display: flex;
+  justify-content: center;
+  width: 60vw;
+  border: 1px solid black;
+}
+
+.ais {
+  width: 100vw;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.spotlist {
+  margin: 15px;
+  background-color: azure;
+  border: 1px solid black;
+}
+
+.spot-img {
+  position: relative;
+  height: 200px;
+  width: 350px;
+}
+
+.spot-i {
+  height: 200px;
+  width: 350px;
+}
+
+.sn {
+  position: absolute;
+  padding-right: 5px;
+  color: azure;
+  text-decoration: underline;
+  text-shadow: -1px 0px 2px rgb(0, 0, 0);
+  margin-top: 170px;
+  padding-left: 10px;
+}
+
+.spot-name {
+  display: flex;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  background-color: rgba(236, 236, 236, 0.993);
+  text-shadow: -1px 0px 2px rgb(255, 255, 255);
+}
+
+.nil {
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  margin: 50px;
+  height: 50vh;
+}

@@ -1,0 +1,35 @@
+.header {
+  background-color: rgb(29, 34, 58);
+  display: flex;
+  justify-content: space-between;
+}
+
+.apl-title {
+  font-size: 20px;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+
+.nav_btn{
+  display: inline-block;
+  text-decoration: none;
+  user-select: none;
+  margin-right: 20px;
+  margin-top: 3px;
+  transition: 0.4s ease;
+  color: white;
+}
+
+.nav_logout{
+  display: inline-block;
+  text-decoration: none;
+  user-select: none;
+  margin-right: 20px;
+  margin-top: 3px;
+  color: white;
+}

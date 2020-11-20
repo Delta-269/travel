@@ -1,0 +1,63 @@
+<%= render "shared/header"%>
+<div class="wra">
+  <div class="showwra">
+  <div class="ed">
+    <%=link_to '編集',  edit_spot_path(@spot.id), method: :get, class: "edb" %>
+    <%=link_to '削除',  spot_path(@spot.id), method: :delete, class: "edb"%>
+  </div>
+    <div class="showti">
+      <%= @spot.title%>
+    </div>
+    <div class="showt">
+      <%= image_tag @spot.image, class: "showimg"%>
+    </div>
+    投稿者コメント
+    <div class="come">
+    <%= @spot.text%>
+    </div>
+  </div>
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-spot">投稿者</th>
+          <td class="detail-value"><%=link_to @spot.user.name, user_path(@spot.user.id), class: "nameco"%></td>
+        </tr>
+        <tr>
+          <th class="detail-spot">カテゴリー</th>
+          <td class="detail-value"><%= @spot.category.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-spot">都道府県</th>
+          <td class="detail-value"><%= @spot.area.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-spot">市区町村等</th>
+          <td class="detail-value"><%= @spot.address %></td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+  <div class="container">
+    <% if user_signed_in? %>
+      <%= form_with(model: [@spot, @comment], local: true) do |form| %>
+        <%= form.text_area :text, placeholder: "コメントする", rows: "2"%>
+        <%= form.submit "SEND" %>
+      <% end %>
+    <% else %>
+      <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+    <% end %>
+        <div class="comments">
+      <h4 class="cometitle">＜コメント一覧＞</h4>
+      <% if @comments %>
+        <% @comments.each do |comment| %>
+          <p>
+            <strong><%= link_to comment.user.name, "/users/#{comment.user_id}" %>：</strong>
+            <%= comment.text %>
+          </p>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+<%=link_to '一覧へ', spots_path, class:"itiran"%>
+
+<%= render "shared/footer"%>

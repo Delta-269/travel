@@ -1,0 +1,29 @@
+<%= render "shared/header"%>
+<div class="back">
+  <div class="catetitle">カテゴリー一覧</div>
+  <ul class="catelist">
+    <div class="left">
+      <div class="catelists1">
+        <li><%=link_to "自然", cates_path(category_id: 2), class:"catelists"%></li>
+      </div>
+      <div class="catelists2">
+        <li><%=link_to "絶景", cates_path(category_id: 3), class:"catelists"%></li>
+      </div>
+      <div class="catelists3">
+        <li><%=link_to "海", cates_path(category_id: 4), class:"catelists"%></li>
+      </div>
+    </div>
+    <div class="right">
+      <div class="catelists4">
+        <li><%=link_to "グルメ", cates_path(category_id: 5), class:"catelists"%></li>
+      </div>
+      <div class="catelists5">
+        <li><%=link_to "温泉・旅館", cates_path(category_id: 6), class:"catelists"%></li>
+      </div>
+      <div class="catelists6">
+        <li><%=link_to "ドライブ", cates_path(category_id: 7), class:"catelists"%></li>
+      </div>
+    </div>
+  </ul>
+  <%=link_to "一覧へ", spots_path, class: "i"%>
+<%= render "shared/footer"%>

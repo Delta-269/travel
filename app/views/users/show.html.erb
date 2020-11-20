@@ -1,0 +1,27 @@
+<%= render "shared/header"%>
+<div class="userpage">
+  <div class="username">
+    <%= "#{@user.name}さんの投稿"%>
+  </div>
+      <ul class="ais">
+      <% unless @spots.empty? %>
+        
+        <% @spots.each do |spot|%>
+          <li class="spotlist">
+            <%=link_to spot_path(spot.id) do%>
+              <div class='spot-img'>
+              <div class="sn"><%= spot.user.name%></div>
+                <%= image_tag spot.image, class: "spot-i"%>
+              </div>
+              <div class='spot-name'>
+                <%= spot.title %>
+              </div>
+           <% end %>
+          </li>
+        <% end %>
+      <%else%>
+        <h3 class="nil">投稿なし</h3>
+      <%end%>
+    </ul>
+</div>
+<%= render "shared/footer"%>

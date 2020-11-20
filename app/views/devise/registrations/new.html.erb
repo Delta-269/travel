@@ -1,0 +1,39 @@
+<div class="b">
+<div class="g">
+<h2 class="si">Sign up</h2>
+
+<%= form_with model: @user, url:user_registration_path, class: 'registration-main', local: true do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+        <%= f.label "名前" %><br/>
+        <%= f.text_field :name, autofocus: true, placeholder:"name"%>
+      </div>
+
+  <div class="field">
+    <%= f.label "メール" %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:"email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label "パスワード" %>
+    <% if @minimum_password_length %>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password", placeholder:"半角と英数字で６文字以上"%>
+  </div>
+
+  <div class="field">
+    <%= f.label "パスワード（確認）" %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder:"同じパスワード" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+
+<div class="login">
+<%= render "devise/shared/links" %>
+</div>
+</div>
+</div>

@@ -1,0 +1,57 @@
+.b {
+  height: 100vh;
+  background-image: image-url("h.png");
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} 
+
+.b:before{
+  content: '';
+  background: inherit;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+}
+
+.g {
+  background-color: rgba(255, 255, 255, 0.712);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  width: 50vw;
+}
+.si {
+  margin-bottom: 30px;
+  text-shadow: -1px 0px 2px white;
+}
+
+.field {
+  margin-bottom: 5px;
+  color: black;
+  text-shadow: -1px 0px 2px white;
+}
+
+.actions {
+  padding-top: 5px;
+}
+
+.login {
+  margin-top: 50px;
+  text-shadow: -0.5px 0px 2px white;
+}

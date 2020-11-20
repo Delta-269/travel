@@ -1,0 +1,46 @@
+<div class="spotnew">
+  <%= form_with model: @spot, local: true do |f|%>
+
+    <div class="tou">
+    <div class="tou1">投稿の内容</div>
+    </div>
+    <div class="spotform">
+    <%= render 'shared/error_messages', model: f.object %>
+
+      <div class="im">
+      <%= f.label "画像を選択してください"%><br />
+      <%= f.file_field :image, id: "spot-image" %>
+      </div>
+
+
+    <div class="field1">
+      <%= f.label "タイトル"%><br />
+      <%= f.text_field :title, placeholder:"タイトル"%>
+    </div>
+
+    <div class="field1">
+    <%= f.label "カテゴリー"%><br />
+    <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"category-select"}) %>
+    </div>
+
+    <div class="field1">
+    <%= f.label "都道府県"%><br />
+    <%= f.collection_select(:area_id, Area.all, :id, :name, {}, {class:"category-select"}) %>
+    </div>
+
+    <div class="field1">
+    <%= f.label "場所"%><br />
+    <%= f.text_field :address, placeholder:"市区町村等"%>
+    </div>
+
+    <div class="field2">
+    <%= f.label "コメント"%><br />
+    <%= f.text_area :text, placeholder:"コメント"%>
+    </div>
+
+    <%= f.submit '投稿', class:"su"%>
+  
+  <%=link_to '詳細へ', spot_path(@spot.id), class:"itiran"%>
+  </div>
+  <% end %>
+</div>

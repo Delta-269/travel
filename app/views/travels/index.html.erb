@@ -1,0 +1,46 @@
+<%= render "shared/header"%>
+<div class= "body">
+  <div class="t">
+    <div class="fot">
+      <%= image_tag 'logo1.png', class: "fo"%>
+      <li class="li">あなたのオススメのスポットを共有しませんか？</li>
+    </div>
+    <div class="bar">
+      <ul class="bar-list">
+        <li><%=link_to 'カテゴリー', catelists_path, class: "cate"%></li>
+        <li><%=link_to '人気の投稿', "#", class: "favo"%></li>
+        <li><%=link_to '投稿一覧・新規投稿', spots_path, class: "new"%></li>
+      </ul>
+    </div>
+  </div>
+  <div class="spots">
+  <h3 class="new-title">新しい投稿</h3>
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <% @spots.each do |spot|%>
+        <div class="swiper-slide">
+        <%=link_to spot_path(spot.id) do%>
+        <li class="spotlist">
+          <%#=%>
+          <div class='spot-img'>
+            <div class="sn"><%=spot.user.name%></div>
+            <%= image_tag spot.image, class: "spot-i"%>
+          </div>
+          <div class='item-info'>
+          <h3 class='spot-name'>
+            <%= spot.title %>
+          </h3>
+          </li>
+        <%end%>
+        </div>
+        <% end %>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+</div>
+<%= render "shared/footer"%>
