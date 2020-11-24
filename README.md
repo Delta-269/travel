@@ -1,24 +1,29 @@
-# README
+# Travel
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリケーション概要
+このアプリケーションはお勧めのスポットを共有することによって、<br>
+旅行する際などの参考にすることができる
 
-Things you may want to cover:
+# URL
+https://travel-31110.herokuapp.com/spots
 
-* Ruby version
+# 利用方法
+お勧めのスポットを投稿して共有する。
 
-* System dependencies
+# 目指した課題解決
+旅行などにいく際などに、調べても有名なとこなどしか基本的に出てこないため、<br>
+お勧めのスポットなどを共有することによって、旅行先などの参考にすること。
 
-* Configuration
+# 洗い出した用件
 
-* Database creation
+# 実装機能
+1.ユーザー管理機能<br>
+2.投稿機能<br>
+3.編集削除機能<br>
+4.コメント機能<br>
 
-* Database initialization
+# 実装予定機能
+お気に入り機能
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# ER図
+<img width="522" alt="e5876c795fbbbfe6e6c1c55f68d21671" src="https://user-images.githubusercontent.com/72244032/99939323-25b2d080-2dad-11eb-91da-250eb59f7e51.png">
