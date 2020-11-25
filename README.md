@@ -11,18 +11,18 @@
 https://travel-31110.herokuapp.com/spots
 
 # アカウント
-アカウント1
-アカウント名： a
-メールアドレス：a@a
-パスワード：a111111 <br>
+アカウント1 <br>
+アカウント名： a<br>
+メールアドレス：a@a<br>
+パスワード：a111111<br>
 
-アカウント2
-アカウント名： s
-メールアドレス：s@s
-パスワード：s111111
+アカウント2 <br>
+アカウント名： s<br>
+メールアドレス：s@s<br>
+パスワード：s111111<br>
 
 # 利用方法
-お勧めのスポットを投稿して共有する
+お勧めのスポットを投稿して共有する<br>
 他者の投稿に対してコメントをする
 
 # 実装機能
@@ -39,21 +39,21 @@ https://travel-31110.herokuapp.com/spots
 
 # トップ画面
 ![2bd42f26cc40a4dcc3c8c3612f845603](https://user-images.githubusercontent.com/72244032/100205806-ed47f980-2f48-11eb-8267-dcba312c1eec.png)
-
 ・新着順に10通までの投稿が表示される
+
 # 一覧画面
 ![31bb711362d96eb207263f168d141938](https://user-images.githubusercontent.com/72244032/100205913-0d77b880-2f49-11eb-8506-9c400bbe5152.jpg)
-
-・新着順に投稿されたものの一覧が表示される
+・新着順に投稿されたものの一覧が表示される<br>
 ・新規投稿を行うことができる
 
 # カテゴリー一覧画面
 ![4f1ee6285a5fdced44c49b3a62bb2bc3](https://user-images.githubusercontent.com/72244032/100206360-9131a500-2f49-11eb-94eb-752a671310d8.jpg)
-・見たいカテゴリーの一覧に遷移できる画面
+・見たいカテゴリーの一覧に遷移できる画面<br>
 ・新規投稿を行うことができる
+
 # 投稿詳細画面
 ![8ef0ba6e8909e522bd88a3e71c965885](https://user-images.githubusercontent.com/72244032/100206114-457efb80-2f49-11eb-8562-93e4c42ff844.jpg)
-・投稿者は編集及び削除ができる<br>
+・投稿者は編集及び削除ができる
 
 <img width="978" alt="bc96b9cfa20a53ecb8d7fc472534812b" src="https://user-images.githubusercontent.com/72244032/100206164-53cd1780-2f49-11eb-8e0f-e9f2add5e3e7.png">
 ・投稿に対してコメントやより詳しい情報を確認できる
