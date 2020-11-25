@@ -36,6 +36,7 @@ https://travel-31110.herokuapp.com/spots
 # ER図
 <img width="522" alt="e5876c795fbbbfe6e6c1c55f68d21671" src="https://user-images.githubusercontent.com/72244032/99939323-25b2d080-2dad-11eb-91da-250eb59f7e51.png">
 <br>
+
 # トップ画面
 ![2bd42f26cc40a4dcc3c8c3612f845603](https://user-images.githubusercontent.com/72244032/100205806-ed47f980-2f48-11eb-8267-dcba312c1eec.png)
 ・新着順に10通までの投稿が表示される
