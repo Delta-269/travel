@@ -10,8 +10,19 @@
 # URL
 https://travel-31110.herokuapp.com/spots
 
+# アカウント
+アカウント1
+アカウント名： a
+メールアドレス：a@a
+パスワード：a111111 <br>
+
+アカウント2
+アカウント名： s
+メールアドレス：s@s
+パスワード：s111111
+
 # 利用方法
-お勧めのスポットを投稿して共有する。<br>
+お勧めのスポットを投稿して共有する
 他者の投稿に対してコメントをする
 
 # 実装機能
@@ -35,18 +46,18 @@ https://travel-31110.herokuapp.com/spots
 
 ・新着順に投稿されたものの一覧が表示される
 ・新規投稿を行うことができる
+
 # カテゴリー一覧画面
 ![4f1ee6285a5fdced44c49b3a62bb2bc3](https://user-images.githubusercontent.com/72244032/100206360-9131a500-2f49-11eb-94eb-752a671310d8.jpg)
-
 ・見たいカテゴリーの一覧に遷移できる画面
 ・新規投稿を行うことができる
 # 投稿詳細画面
 ![8ef0ba6e8909e522bd88a3e71c965885](https://user-images.githubusercontent.com/72244032/100206114-457efb80-2f49-11eb-8562-93e4c42ff844.jpg)
 ・投稿者は編集及び削除ができる<br>
+
 <img width="978" alt="bc96b9cfa20a53ecb8d7fc472534812b" src="https://user-images.githubusercontent.com/72244032/100206164-53cd1780-2f49-11eb-8e0f-e9f2add5e3e7.png">
 ・投稿に対してコメントやより詳しい情報を確認できる
 
 # ユーザー詳細画面
 ![ee14474b9616e029855e41a0466e1ecb](https://user-images.githubusercontent.com/72244032/100206410-a27ab180-2f49-11eb-9807-e9b2ed5d3939.jpg)
-
 ・ユーザーが投稿した一覧が表示される
