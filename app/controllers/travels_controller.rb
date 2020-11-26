@@ -1,5 +1,5 @@
 class TravelsController < ApplicationController
   def index
-    @spots = Spot.all.order("created_at DESC").limit(9)
+    @spots = Spot.includes(:user).order("created_at DESC").limit(9)
   end
 end
