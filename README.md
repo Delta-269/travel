@@ -33,7 +33,7 @@ https://travel-31110.herokuapp.com/spots
 5.コメント機能<br>
 
 # ER図
-<img width="522" alt="e5876c795fbbbfe6e6c1c55f68d21671" src="https://user-images.githubusercontent.com/72244032/99939323-25b2d080-2dad-11eb-91da-250eb59f7e51.png">
+<img width="438" alt="13c8bd6129b515f1a8fd3d52e2b12fb7" src="https://user-images.githubusercontent.com/72244032/100437729-8bbc9200-30e4-11eb-9593-45b3c5b74607.png">
 <br>
 
 # トップ画面
