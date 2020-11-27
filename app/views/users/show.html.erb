@@ -8,6 +8,27 @@
         
         <% @spots.each do |spot|%>
           <li class="spotlist">
+            <%=link_to spot_path(spot.id), class:"textd" do%>
+              <div class='spot-img'>
+              <div class="sn"><%= spot.user.name%></div>
+                <%= image_tag spot.image, class: "spot-i"%>
+              </div>
+              <div class='spot-name'>
+                <%= spot.title %>
+              </div>
+            <% end %>
+          </li>
+        <% end %>
+      <%else%>
+        <h3 class="nil">投稿なし</h3>
+      <%end%>
+    </ul>
+  <h3 class="useroki">お気に入り</h3>
+  <ul class="ais">
+      <% unless @like.empty? %>
+        
+        <% @user.liked_spots.each do |spot| %>
+          <li class="spotlist">
             <%=link_to spot_path(spot.id) do%>
               <div class='spot-img'>
               <div class="sn"><%= spot.user.name%></div>
@@ -16,11 +37,14 @@
               <div class='spot-name'>
                 <%= spot.title %>
               </div>
-           <% end %>
+              <div class="okicount">
+                (お気入り数<%= spot.liked_users.count %>)
+              </div>
+            <% end %>
           </li>
         <% end %>
       <%else%>
-        <h3 class="nil">投稿なし</h3>
+        <h3 class="nil">お気に入りなし</h3>
       <%end%>
     </ul>
 </div>

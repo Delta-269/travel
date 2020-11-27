@@ -8,7 +8,7 @@
     <div class="bar">
       <ul class="bar-list">
         <li><%=link_to 'カテゴリー', catelists_path, class: "cate"%></li>
-        <li><%=link_to '人気の投稿', "#", class: "favo"%></li>
+        <li><%=link_to '人気の投稿', favos_path, class: "favo"%></li>
         <li><%=link_to '投稿一覧・新規投稿', spots_path, class: "new"%></li>
       </ul>
     </div>
@@ -20,7 +20,7 @@
       <div class="swiper-wrapper">
         <% @spots.each do |spot|%>
         <div class="swiper-slide">
-        <%=link_to spot_path(spot.id) do%>
+        <%=link_to spot_path(spot.id), class:"textd" do%>
         <li class="spotlist">
           <%#=%>
           <div class='spot-img'>
@@ -31,6 +31,9 @@
           <h3 class='spot-name'>
             <%= spot.title %>
           </h3>
+          <div class="okicount">
+          (お気入り数<%= spot.liked_users.count %>)
+          </div>
           </li>
         <%end%>
         </div>

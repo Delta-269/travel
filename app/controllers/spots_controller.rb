@@ -22,6 +22,7 @@ class SpotsController < ApplicationController
   def show
     @comment = Comment.new
     @comments = @spot.comments.includes(:user)
+    @like = Like.new
   end
 
   def edit

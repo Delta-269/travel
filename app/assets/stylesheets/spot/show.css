@@ -5,6 +5,10 @@
   flex-direction: column;
 }
 
+.oki {
+  margin: 10px;
+}
+
 .ed {
   display: flex;
   justify-content: space-between;

@@ -4,7 +4,7 @@
     <div class="sis">
       <ul class="bar-2">
         <li><%=link_to 'カテゴリー', catelists_path, class: "cate"%></li>
-        <li><%=link_to '人気の投稿', "#", class: "favo"%></li>
+        <li><%=link_to '人気の投稿', favos_path, class: "favo"%></li>
       </ul>
     </div>
     <div class="bar-3">
@@ -24,13 +24,16 @@
         
         <% @spots.each do |spot|%>
           <li class="spotlist">
-            <%=link_to spot_path(spot.id) do%>
+            <%=link_to spot_path(spot.id), class:"textd" do%>
               <div class='spot-img'>
               <div class="sn"><%= spot.user.name%></div>
                 <%= image_tag spot.image, class: "spot-i"%>
               </div>
               <div class='spot-name'>
                 <%= spot.title %>
+              </div>
+              <div class="okicount">
+                (お気入り数<%= spot.liked_users.count %>)
               </div>
            <% end %>
           </li>

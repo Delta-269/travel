@@ -3,26 +3,38 @@
   <div class="catetitle">カテゴリー一覧</div>
   <ul class="catelist">
     <div class="left">
-      <div class="catelists1">
-        <li><%=link_to "自然", cates_path(category_id: 2), class:"catelists"%></li>
-      </div>
-      <div class="catelists2">
-        <li><%=link_to "絶景", cates_path(category_id: 3), class:"catelists"%></li>
-      </div>
-      <div class="catelists3">
-        <li><%=link_to "海", cates_path(category_id: 4), class:"catelists"%></li>
-      </div>
+      <%= link_to  cates_path(category_id: 2), class:"textd" do%>
+        <div class="catelists1">
+          <li class="catelists">自然</li>
+        </div>
+      <%end%>
+      <%= link_to  cates_path(category_id: 3), class:"textd" do%>
+        <div class="catelists2">
+          <li class="catelists">絶景</li>
+        </div>
+      <%end%>
+      <%= link_to  cates_path(category_id: 4), class:"textd" do%>
+        <div class="catelists3">
+          <li class="catelists">海</li>
+        </div>
+      <%end%>
     </div>
     <div class="right">
-      <div class="catelists4">
-        <li><%=link_to "グルメ", cates_path(category_id: 5), class:"catelists"%></li>
-      </div>
-      <div class="catelists5">
-        <li><%=link_to "温泉・旅館", cates_path(category_id: 6), class:"catelists"%></li>
-      </div>
-      <div class="catelists6">
-        <li><%=link_to "ドライブ", cates_path(category_id: 7), class:"catelists"%></li>
-      </div>
+      <%= link_to  cates_path(category_id: 5), class:"textd" do%>
+        <div class="catelists4">
+          <li class="catelists">グルメ</li>
+        </div>
+      <%end%>
+      <%= link_to  cates_path(category_id: 6), class:"textd" do%>
+        <div class="catelists5">
+          <li class="catelists">温泉・旅館</li>
+        </div>
+      <%end%>
+      <%= link_to  cates_path(category_id: 7), class:"textd" do%>
+        <div class="catelists6">
+          <li class="catelists">ドライブ</li>
+        </div>
+      <%end%>
     </div>
   </ul>
   <%=link_to "一覧へ", spots_path, class: "i"%>

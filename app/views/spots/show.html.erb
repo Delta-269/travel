@@ -1,6 +1,16 @@
 <%= render "shared/header"%>
 <div class="wra">
   <div class="showwra">
+  <div class="oki">
+  <h3>お気に入り件数: <%= @spot.likes.count %></h3>
+<% if user_signed_in? %>>
+<% if current_user.already_liked?(@spot) %>
+  <%= button_to 'お気に入り解除', spot_like_path(@spot), method: :delete %>
+<% else %>
+  <%= button_to 'お気に入り', spot_likes_path(@spot) %>
+<% end %>
+<% end %>
+</div>
   <div class="ed">
     <%=link_to '編集',  edit_spot_path(@spot.id), method: :get, class: "edb" %>
     <%=link_to '削除',  spot_path(@spot.id), method: :delete, class: "edb"%>
