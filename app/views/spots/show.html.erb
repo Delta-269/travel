@@ -3,7 +3,7 @@
   <div class="showwra">
   <div class="oki">
   <h3>お気に入り件数: <%= @spot.likes.count %></h3>
-<% if user_signed_in? %>>
+<% if user_signed_in? %>
 <% if current_user.already_liked?(@spot) %>
   <%= button_to 'お気に入り解除', spot_like_path(@spot), method: :delete %>
 <% else %>

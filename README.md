@@ -22,16 +22,15 @@ https://travel-31110.herokuapp.com/spots
 
 # 利用方法
 お勧めのスポットを投稿して共有する<br>
-他者の投稿に対してコメントをする
+お気に入り登録をする<br>
+他者の投稿に対してコメントをする<br>
 
 # 実装機能
 1.ユーザー管理機能<br>
 2.投稿機能<br>
 3.編集削除機能<br>
-4.コメント機能<br>
-
-# 実装予定機能
-お気に入り機能
+4.お気に入り機能<br>
+5.コメント機能<br>
 
 # ER図
 <img width="522" alt="e5876c795fbbbfe6e6c1c55f68d21671" src="https://user-images.githubusercontent.com/72244032/99939323-25b2d080-2dad-11eb-91da-250eb59f7e51.png">
@@ -54,12 +53,19 @@ https://travel-31110.herokuapp.com/spots
 ・新規投稿を行うことができる
 <br>
 
+# 人気順一覧画面
+<img width="757" alt="6943826cc91938cd6f9cd22f2f39760e" src="https://user-images.githubusercontent.com/72244032/100436690-07b5da80-30e3-11eb-9592-5646df7b3634.png">
+・お気に入り登録の多い順に一覧表示する<br>
+<br>
+
 # 投稿詳細画面
-![8ef0ba6e8909e522bd88a3e71c965885](https://user-images.githubusercontent.com/72244032/100206114-457efb80-2f49-11eb-8562-93e4c42ff844.jpg)
+<img width="727" alt="b6ee786a7cb783fc37b68ced20af5dfa" src="https://user-images.githubusercontent.com/72244032/100436275-7ba3b300-30e2-11eb-8e0f-ebaab0453128.png">
 ・投稿者は編集及び削除ができる<br>
+・ログインユーザーはお気に入り登録ができる<br>
 
 <img width="978" alt="bc96b9cfa20a53ecb8d7fc472534812b" src="https://user-images.githubusercontent.com/72244032/100206164-53cd1780-2f49-11eb-8e0f-e9f2add5e3e7.png">
-・投稿に対してコメントやより詳しい情報を確認できる
+・投稿に対してコメントやより詳しい情報を確認できる<br>
+・ログインユーザーはコメントの入力ができる<br>
 <br>
 
 # ユーザー詳細画面
