@@ -35,6 +35,10 @@ https://travel-31110.herokuapp.com/spots
 4.お気に入り機能<br>
 5.コメント機能<br>
 
+# 今後の改善箇所
+1.カテゴリーのボタンなどがディスプレイサイズを変更した際に崩れるため対処する<br>
+2.レスポンシブ対応できるようにする<br>
+
 # ER図
 <img width="438" alt="13c8bd6129b515f1a8fd3d52e2b12fb7" src="https://user-images.githubusercontent.com/72244032/100437729-8bbc9200-30e4-11eb-9593-45b3c5b74607.png">
 <br>
